@@ -1,0 +1,20 @@
+services:
+
+  web-app:
+    container_name: webapp-demo
+    build:
+      context: ./webapp
+      dockerfile: Dockerfile
+    environment:
+      - MESSAGE=🎉 Hello from 🐳 Compose 👋
+      - HTTP_PORT=6065
+    ports:
+      - 6065:6065
+    develop:
+      watch:
+        - action: sync
+          path: ./webapp/public
+          target: /app/public
+        - action: rebuild
+          path: ./webapp/main.go
+
