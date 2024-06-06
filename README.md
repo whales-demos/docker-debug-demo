@@ -38,14 +38,10 @@ You cannot use the **Exec** panel to debug the application because the applicati
 
 ### Install tools
 
-When you are in the terminal, install `exa` and `helix`:
-
-![Alternative Text](/imgs/04-install-tools.png)
+When you are in the terminal, install `helix`:
 
 ### Fix the message: "🎃 You've been hacked! 😈🔥"
 
-Show the tree of the directories with `exa -T`:
-![Alternative Text](/imgs/05-exa.png)
 
 Go to the `/public/` directory and open the `info.txt` file with **helix** with this command `hx info.txt`:
 ![Alternative Text](/imgs/06-hx.png)
@@ -70,5 +66,5 @@ docker compose down
 ## Remarks
 
 - If some changes persist even after you stopped and restarded the containers, clear the cache of your browser (with Chrome: <kbd>Clear Browsing Data...</kbd>).
-- Don't forget to start stop and remove the container.
+- Don't forget to start **stop** and remove the container.
 - 👋 btw: the same fixe can be done with the **Files** panel of the **Docker Debug** GUI. (TODO: find another idea of demo).
